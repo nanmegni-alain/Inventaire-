@@ -1,4 +1,6 @@
 #include "Inventaire.h"
+#include <iostream>
+
 
 Inventaire::Inventaire(std::string nommateriel, int nombre):nommateriel_(nommateriel) , nombre_(nombre)
 {
@@ -6,5 +8,6 @@ Inventaire::Inventaire(std::string nommateriel, int nombre):nommateriel_(nommate
 
 void Inventaire::afficher()const
 {
-	std::cout << "ECRAN :" << Ecran << std::endl;
+	std::cout << "NOM MATERIEL:" << nommateriel_ << std::endl;
+	std::cout << "QUANTITE:" << nombre_ << std::endl;
 }
